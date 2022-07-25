@@ -1,0 +1,162 @@
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 250px;
+}
+
+.box-form {
+  margin-top: 100px;
+  color: #18191F;
+  font-size: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-form form {
+  max-width: 85%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.img-form {
+  width: 50px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.img-form img {
+  width: 100%;
+}
+
+.titulo-form {
+  color: #CF372D;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #18191F;
+  border-bottom: 1px solid rgb(145, 141, 141);
+}
+
+textarea {
+  font-family: 'Inter', sans-serif;
+  resize: none;
+}
+
+textarea::placeholder, input::placeholder {
+  color: #18191F;
+  opacity: 0.8;
+}
+
+.boton-enviar {
+  align-self: center;
+}
+
+input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #CF372D;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+@media (max-width: 1024px){
+
+  html {
+      font-size: 50%;
+  }
+  .enlace{
+      padding-left: 20px;
+  }
+  .box-circular {
+      height: 300px;
+      width: 300px;
+  }
+  .contenedor-servicios {
+      flex-direction: column;
+      align-items: center;
+  }
+  .box-servicio {
+      width: 80%;
+  }
+}
+
+@media (max-width: 768px){
+
+  html {
+      font-size: 40%;
+  }
+  .box-uno {
+      width: 100%;
+  }
+
+  .box-dos {
+      display: none;
+  }
+
+  .instrucciones {
+      flex-direction: column;
+  }
+
+  .box-paso {
+      width: 60%;
+      margin-bottom: 30px;
+  }
+
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      z-index: 3;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #18191F;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: #fff;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}

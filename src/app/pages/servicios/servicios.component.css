@@ -1,0 +1,160 @@
+.contenedor-servicios {
+  margin-top: 100px;
+  margin-bottom: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contenedor-servicios h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.box-servicio  {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  width: 25%;
+  max-width: 350px;
+}
+
+.card-servicio {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 35px;
+  color: #CF372D;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  line-height: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.servicio-recomendado {
+  background-color: #CF372D;
+  color: #fff;
+}
+
+
+
+.card-servicio h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.card-servicio h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.card-servicio p {
+  font-size: 12px;
+  font-weight: 500;
+  justify-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.card-servicio p:last-of-type {
+  margin-bottom: 40px;
+}
+
+.btn-servicio {
+  position: absolute;
+  background-color: #CF372D;
+  color: #fff;
+  bottom: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: fit-content;
+  align-self: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.btn-servicio-recomendado {
+  background-color: #fff;
+  color: #CF372D;
+}
+
+@media (max-width: 1024px){
+
+  html {
+      font-size: 50%;
+  }
+  .enlace{
+      padding-left: 20px;
+  }
+  .box-circular {
+      height: 300px;
+      width: 300px;
+  }
+  .contenedor-servicios {
+      flex-direction: column;
+      align-items: center;
+  }
+  .box-servicio {
+      width: 80%;
+  }
+}
+
+@media (max-width: 768px){
+
+  html {
+      font-size: 40%;
+  }
+  .box-uno {
+      width: 100%;
+  }
+
+  .box-dos {
+      display: none;
+  }
+
+  .instrucciones {
+      flex-direction: column;
+  }
+
+  .box-paso {
+      width: 60%;
+      margin-bottom: 30px;
+  }
+
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      z-index: 3;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #18191F;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: #fff;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}

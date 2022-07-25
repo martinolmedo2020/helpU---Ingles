@@ -1,0 +1,145 @@
+/*Estilos del contenido principal del index(Titulo, parrafo e imagen del smartphone)*/
+.content {
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.box-uno {
+  width: 50%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-uno h1 {
+  font-weight: 800;
+  line-height: 9.8rem;
+  font-size: 5.5rem;
+}
+
+.box-uno p {
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 1.8rem;
+}
+
+.box-uno h1, .box-uno p {
+  margin-bottom: 20px;
+  color: #18191F;
+  max-width: 63%;
+}
+
+.box-dos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-imagen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-circular {
+  border-radius: 100%;
+  height: 400px;
+  width: 400px;
+  background-color: #CF372D;
+  overflow: hidden;
+}
+
+.box-circular img {
+  width: 80%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+/*Estilos de los pasos a seguir del index*/
+
+.instrucciones {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 250px;
+}
+
+.box-instrucciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  color: #18191F;
+  padding-top: 50px;
+}
+
+.titulo-instrucciones {
+  color: #CF372D;
+  font-size: 3rem;
+}
+
+.box-paso {
+  margin-right: 20px;
+  width: 20%;
+}
+
+.box-paso h4 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 20px;
+}
+
+.box-paso p {
+  font-size: 1.5rem;
+  line-height: 2.6rem
+}
+
+@media (max-width: 1024px){
+
+  html {
+      font-size: 50%;
+  }
+  .box-circular {
+      height: 300px;
+      width: 300px;
+  }
+  .contenedor-servicios {
+      flex-direction: column;
+      align-items: center;
+  }
+  .box-servicio {
+      width: 80%;
+  }
+}
+
+@media (max-width: 768px){
+
+  html {
+      font-size: 40%;
+  }
+  .box-uno {
+      width: 100%;
+  }
+
+  .box-dos {
+      display: none;
+  }
+
+  .instrucciones {
+      flex-direction: column;
+  }
+
+  .box-paso {
+      width: 60%;
+      margin-bottom: 30px;
+  }
+}

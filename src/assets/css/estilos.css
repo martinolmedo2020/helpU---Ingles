@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+*::selection {
+    background: #CF372D;
+    color: #fff;
+}
+
+
+html {
+    font-size: 62.5%;
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 1024px){
+
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 768px){
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 368px) {
+  html {
+    font-size: 35%;
+  }
+}
